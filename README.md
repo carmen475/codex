@@ -1,6 +1,6 @@
-# Service Checkout Starter
+# Sample Service Checkout
 
-A neutral service checkout app starter for `carmen475/codex`.
+A fake service checkout app starter for `carmen475/codex`.
 
 It includes:
 
@@ -25,4 +25,4 @@ Open the local URL printed by Vite, usually `http://127.0.0.1:5173/`.
 - Success: `4242 4242 4242 4242`
 - Decline: `4000 0000 0000 0002`
 
-Replace the placeholder services in `src/main.js` when you have the real service business name, service packages, and prices.
+Replace the placeholder services in `src/main.js` when you have the real service package names, descriptions, and prices.

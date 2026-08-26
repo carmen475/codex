@@ -227,7 +227,7 @@ function paymentForm() {
       <label>Card number<input name="cardNumber" inputmode="numeric" value="${escapeHtml(p.number)}" ${attrsFor("cardNumber")} />${errorFor("cardNumber")}</label>
       <div class="row two">
         <label>Expiration<input name="exp" placeholder="12/30" value="${escapeHtml(p.exp)}" ${attrsFor("exp")} />${errorFor("exp")}</label>
-        <label>CVC<input name="cvc" inputmode="numeric" value="${escapeHtml(p.cvc)}" ${attrsFor("cvc")}</label>
+        <label>CVC<input name="cvc" inputmode="numeric" value="${escapeHtml(p.cvc)}" ${attrsFor("cvc")} />${errorFor("cvc")}</label>
       </div>
       <label>Billing ZIP<input name="billingZip" inputmode="numeric" value="${escapeHtml(p.zip)}" ${attrsFor("billingZip")} />${errorFor("billingZip")}</label>
       ${summary()}

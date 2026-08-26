@@ -17,10 +17,10 @@ const services = [
   },
   {
     id: "service-three",
-    name: "Service Package Three",
+    name: "Big Service",
     price: 129,
     image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=900&q=80",
-    description: "Edit the service list when your real offers are ready.",
+    description: "Use this $129 placeholder for your larger service package.",
   },
 ];
 

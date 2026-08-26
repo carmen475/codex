@@ -263,19 +263,28 @@ function render() {
   const count = cartItems().reduce((sum, item) => sum + item.qty, 0);
   app.innerHTML = `
     <header>
-      <div><p>Replace with your service business name</p><h1>Service Checkout Starter</h1></div>
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">SC</div>
+        <div><p>Sample Service Business</p><h1>Service Checkout</h1></div>
+      </div>
       <button class="cart" data-action="cart">Order <span>${count}</span></button>
     </header>
     <main>
       <section class="hero">
         <p>Safe checkout demo</p>
-        <h2>A starter checkout flow you can customize for your service business.</h2>
+        <h2>A fake service checkout flow for testing.</h2>
         <p>Service packages, order edits, client validation, simulated payment success, and simulated decline are included.</p>
       </section>
       <div class="layout">
         ${serviceList()}
         ${activePanel()}
       </div>
+      <footer>
+        <strong>Sample Service Business</strong>
+        <span>123 Example Ave, Suite 100, Orlando, FL 32801</span>
+        <span>Customer Service: (555) 010-0129</span>
+        <span>Mon-Fri | 9:00 AM - 5:00 PM</span>
+      </footer>
     </main>
   `;
 }

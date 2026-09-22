@@ -27,12 +27,6 @@ Open the local URL printed by Vite, usually `http://127.0.0.1:5173/`.
 
 Replace the placeholder services in `src/main.js` when you have the real service package names, descriptions, and prices.
 
-## Windows Chrome removal
+## Google Workspace administration
 
-Administrators can remove machine-wide and per-user Chrome installations with the included PowerShell script:
-
-```powershell
-PowerShell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\uninstall-chrome.ps1
-```
-
-Run the command from an elevated PowerShell session. The script stops Chrome, runs each discovered Chrome uninstaller, and writes its results to `C:\Windows\Temp\Chrome-Uninstall.log`. Browser profiles are preserved by default; pass `-RemoveUserData` to delete them. Use `-WhatIf` to preview destructive actions without performing them.
+Chrome cannot be uninstalled from a computer by deleting it from Google Workspace. Administrators who need to remove a managed-browser record, stop managing browsers, or remove Chrome from an endpoint should follow the [Google Workspace Chrome removal runbook](docs/remove-chrome-from-google-workspace.md).

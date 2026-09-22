@@ -26,3 +26,13 @@ Open the local URL printed by Vite, usually `http://127.0.0.1:5173/`.
 - Decline: `4000 0000 0000 0002`
 
 Replace the placeholder services in `src/main.js` when you have the real service package names, descriptions, and prices.
+
+## Windows Chrome removal
+
+Administrators can remove machine-wide and per-user Chrome installations with the included PowerShell script:
+
+```powershell
+PowerShell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\uninstall-chrome.ps1
+```
+
+Run the command from an elevated PowerShell session. The script stops Chrome, runs each discovered Chrome uninstaller, and writes its results to `C:\Windows\Temp\Chrome-Uninstall.log`. Browser profiles are preserved by default; pass `-RemoveUserData` to delete them. Use `-WhatIf` to preview destructive actions without performing them.
